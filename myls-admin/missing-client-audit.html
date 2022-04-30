@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min-old.css"> -->
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+  <!-- Icon CSS -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/icons.min.css">
+  <!-- Summernote css -->
+  <link rel="stylesheet" href="assets/css/summernote-bs4.min.css" />
+  <!-- Bootstrap Datatable css -->
+  <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+  <!-- Select2 -->
+  <link rel="stylesheet" href="assets/select2/css/select2.min.css">
+  <link rel="stylesheet" href="assets/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- App Css-->
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <title>MyLS - Immigration Speed</title>
+</head>
+
+<body data-sidebar="dark">
+
+  <div id="layout-wrapper">
+    <!-- Header Start -->
+    <header id="page-topbar">
+      <div class="navbar-header">
+        <div class="d-flex">
+          <!-- LOGO -->
+          <div class="navbar-brand-box">
+            <a href="#" class="logo logo-dark">
+              <span class="logo-sm">
+                Immigration Speed
+                <!-- <img src="assets/images/logo.svg" alt="" height="22"> -->
+              </span>
+              <span class="logo-lg">
+                IS
+                <!-- <img src="assets/images/logo-dark.png" alt="" height="17"> -->
+              </span>
+            </a>
+
+            <a href="#" class="logo logo-light">
+              <span class="logo-sm text-white text-uppercase">
+                IS
+                <!-- <img src="assets/images/logo-light.svg" alt="" height="22"> -->
+              </span>
+              <span class="logo-lg text-white text-uppercase">
+                Immigration Speed
+                <!-- <img src="assets/images/logo-light.png" alt="" height="19"> -->
+              </span>
+            </a>
+          </div>
+
+          <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+            <i class="fa fa-fw fa-bars"></i>
+          </button>
+
+          <!-- App Search-->
+          <form class="app-search d-none d-lg-block">
+            <div class="position-relative">
+              <input type="text" class="form-control" id="searchtextbox" placeholder="Search...">
+              <span class="bx bx-search-alt"></span>
+            </div>
+            <div class="livesearch" id="livesearch" style="display: none;">
+              <table>
+                <tbody id="livesearch-table">
+                  <tr>
+                    <td class="searchclick">
+                      <b>Case Number #290</b>
+                      <p class="mb-0">Attorney: Sandip Patel | Palalegal: Mahesh Patel | Participants: komal singh
+                        [Client] |
+                        Events/Appointments</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="searchclick">
+                      <b>Case Number #291</b>
+                      <p class="mb-0">Attorney: Kishan Patel | Palalegal: Pranjan Patel | Participants: yash singh
+                        [Client] |
+                        Events/Appointments</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="searchclick">
+                      <b>Case Number #292</b>
+                      <p class="mb-0">Attorney: Nikunj Chaudhari | Palalegal: Test User | Participants: User singh
+                        [Client] |
+                        Events/Appointments</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="searchclick">
+                      <b>Case Number #293</b>
+                      <p class="mb-0">Attorney: Kamlesh | Palalegal: mayur | Participants: User test [Client] | 12345
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="searchclick">
+                      <b>Case Number #294</b>
+                      <p class="mb-0">Attorney: Dhrumin | Palalegal: Mr. Zackary Mayer II | Participants: Kenny Beer MD
+                        [Client] |
+                        12345</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="searchclick">
+                      <b>Case Number #295</b>
+                      <p class="mb-0">Attorney: Dr. Lupe Cummings Sr. | Palalegal: Mr. Zackary Mayer II | Participants:
+                        Kenny Beer MD
+                        [Client] | 12345</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="searchclick">
+                      <b>Case Number #295</b>
+                      <p class="mb-0">Attorney: Celestino Abshire | Palalegal: Abelardo Kohler | Participants: Kenny
+                        [Client] | 456
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+
+          <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" data-toggle="tooltip"
+            data-placement="top" title="Search Tips: Your word searches need at least 2 characters.
+          Partial name matches will work.
+          Search is not case sensitive.
+          Search by first name, ie. John
+          Search by last name, ie. Smith
+          Search by case number, ie 6226">
+            <i class="fa fa-question-circle-o"></i>
+          </button>
+          <a type="button" href="advanced-search.html"  class="btn btn-sm px-3 font-size-16 header-item waves-effect d-flex align-items-center">
+            <i class="fa bx bx-search-alt"></i>
+          </a>
+        </div>
+
+        <div class="d-flex">
+
+          <div class="dropdown d-inline-block d-lg-none ml-2">
+            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="mdi mdi-magnify"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+              aria-labelledby="page-header-search-dropdown">
+
+              <form class="p-3">
+                <div class="form-group m-0">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="d-inline-block header-timer">
+            <!--<button type="button" class="btn header-item waves-effect" data-toggle="modal" data-target="#timerModal">-->
+            <button type="button" class="btn header-item waves-effect" onclick="javascript:timerCall()">
+              <div class="timerbox"><i id="playid" class="fa fa-play mr-2" aria-hidden="true"></i>
+                <h6 class="mb-0" id="myh1"><time>00:00:00</time></h6>
+              </div>
+            </button>
+            <input type="hidden" name="isstart" id="isstart" value="0">
+          </div>
+          <div class="dropdown d-inline-block">
+            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-plus font-size-16 align-middle mr-2"></i> New
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <!-- item-->
+              <a class="dropdown-item" href="create-new-case.html"> Case</a>
+              <a class="dropdown-item d-block" href="event-add.html">Event</a>
+              <a class="dropdown-item d-block" href="mail-add.html">Mail</a>
+              <a class="dropdown-item d-block" href="#">Client</a>
+              <a class="dropdown-item d-block" href="#">Ticket</a>
+            </div>
+          </div>
+
+          <div class="dropdown d-inline-block">
+            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-bell bx-tada"></i>
+              <span class="badge badge-danger badge-pill">3</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+              aria-labelledby="page-header-notifications-dropdown">
+              <div class="p-3">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h6 class="m-0"> Notifications </h6>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#!" class="small"> View All</a>
+                  </div>
+                </div>
+              </div>
+              <div data-simplebar style="max-height: 230px;">
+                <a href="#" class="text-reset notification-item">
+                  <div class="media">
+                    <div class="avatar-xs mr-3">
+                      <span class="avatar-title bg-primary rounded-circle font-size-16">
+                        <i class="bx bx-cart"></i>
+                      </span>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="mt-0 mb-1">Your order is placed</h6>
+                      <div class="font-size-12 text-muted">
+                        <p class="mb-1">If several languages coalesce the grammar</p>
+                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="text-reset notification-item">
+                  <div class="media">
+                    <img src="assets/images/users/avatar-3.jpg" class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                    <div class="media-body">
+                      <h6 class="mt-0 mb-1">James Lemire</h6>
+                      <div class="font-size-12 text-muted">
+                        <p class="mb-1">It will seem like simplified English.</p>
+                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="text-reset notification-item">
+                  <div class="media">
+                    <div class="avatar-xs mr-3">
+                      <span class="avatar-title bg-success rounded-circle font-size-16">
+                        <i class="bx bx-badge-check"></i>
+                      </span>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="mt-0 mb-1">Your item is shipped</h6>
+                      <div class="font-size-12 text-muted">
+                        <p class="mb-1">If several languages coalesce the grammar</p>
+                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="text-reset notification-item">
+                  <div class="media">
+                    <img src="assets/images/users/avatar-4.jpg" class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                    <div class="media-body">
+                      <h6 class="mt-0 mb-1">Salena Layfield</h6>
+                      <div class="font-size-12 text-muted">
+                        <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="p-2 border-top">
+                <a class="btn btn-sm btn-link font-size-14 btn-block text-center" href="javascript:void(0)">
+                  <i class="mdi mdi-arrow-right-circle mr-1"></i> View More..
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown d-inline-block">
+            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="d-none d-xl-inline-block">Henry</span>
+              <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+              <img class="rounded-circle header-profile-user ml-2" src="assets/images/users/avatar-7.jpg"
+                alt="Header Avatar">
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <!-- item-->
+              <a class="dropdown-item" href="profile.html"><i class="bx bx-user font-size-16 align-middle mr-1"></i> Profile</a>
+              <a class="dropdown-item d-block" href="#"><i
+                  class="bx bx-wrench font-size-16 align-middle mr-1"></i>Account Setting</a>
+              <a class="dropdown-item d-block" href="#"><i
+                  class="bx bx-comment font-size-16 align-middle mr-1"></i>Feedback</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-danger" href="#"><i
+                  class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> Logout</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu">
+
+      <div data-simplebar class="h-100">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu" class="mm-active">
+          <!-- Left Menu Start -->
+          <ul class="metismenu list-unstyled" id="side-menu">
+            <li>
+              <a href="create-new-case.html" class="waves-effect">
+                <i class="bx bx-plus"></i>
+                <span>CREATE NEW CASE</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript: void(0);" class="has-arrow waves-effect">
+                <i class="bx bx-briefcase-alt"></i>
+                <span>CASES</span>
+              </a>
+              <ul class="sub-menu" aria-expanded="false">
+                <li class="plusmenu"><a href="all-cases.html">MY CASES</a><i class="bx bx-plus plusicon"
+                    onclick="javascript:customRedirect(1)"></i></li>
+                <li class="plusmenu"><a href="task-list.html">MY TASKS</a><i class="bx bx-plus plusicon"
+                    onclick="javascript:customRedirect(2)"></i></li>
+              </ul>
+            </li>
+            <li>
+              <a href="dashboard.html" class="waves-effect">
+                <i class="bx bxs-dashboard"></i>
+                <span>DASHBOARD</span>
+              </a>
+            </li>
+            <li>
+              <a href="calender.html" class="waves-effect">
+                <i class="bx bx-calendar"></i>
+                <span>CALENDAR</span>
+              </a>
+            </li>
+            <li class="plusmenu">
+              <a href="postal-mail.html" class="waves-effect">
+                <i class="bx bx-envelope"></i>
+                <span>MAIL</span>
+              </a>
+              <i class="bx bx-plus plusicon" onclick="javascript:customRedirect(3)"></i>
+            </li>
+            <li>
+              <a href="chat.html" class="waves-effect">
+                <i class="bx bx-chat"></i>
+                <span>CHAT</span>
+              </a>
+            </li>
+            <li>
+              <a href="timesheet.html" class="waves-effect">
+                <i class="bx bx-time"></i>
+                <span>TIMESHEET</span>
+              </a>
+            </li>
+            <li>
+              <a href="notifications.html" class="waves-effect">
+                <i class="bx bx-bell"></i>
+                <span>NOTIFICATIONS</span>
+              </a>
+            </li>
+            <li>
+              <a href="resources.html" class="waves-effect">
+                <i class="bx bx-paperclip"></i>
+                <span>RESOURCES</span>
+              </a>
+            </li>
+            <li>
+              <a href="front-desk.html" class="waves-effect">
+                <i class="bx bxs-user-detail"></i>
+                <span>FRONT DESK</span>
+              </a>
+            </li>
+            <li class="mm-active">
+              <a href="audit-list.html" class="waves-effect active">
+                <i class="bx bx-file-find"></i>
+                <span>AUDIT</span>
+              </a>
+            </li>
+            <li>
+              <a href="settings-list.html" class="waves-effect">
+                <i class="bx bx-cog"></i>
+                <span>SETTINGS</span>
+              </a>
+            </li>
+            <li>
+              <a href="client-login.html" class="waves-effect">
+                <i class="bx bx-user"></i>
+                <span>CLIENT LOGIN</span>
+              </a>
+            </li>
+            <li>
+              <a href="zoom-meetings.html" class="waves-effect">
+                <i class="bx bx-video"></i>
+                <span>ZOOM MEETINGS</span>
+              </a>
+            </li>
+            <li class="mt-4">
+              <a href="case-notes.html" class="waves-effect">
+                <i class="bx bx-briefcase-alt"></i>
+                <span>INDIVIDUAL CASE PAGE</span>
+              </a>
+            </li>
+            <li class="text-center copyright-text"><a href="#">COPYRIGHT © IMMIGRATION SPEED</a></li>
+          </ul>
+        </div>
+        <!-- Sidebar -->
+        <!-- <div id="sidebar-menu" class="sidebar-bootom">
+          <ul class="metismenu list-unstyled" id="side-menu">
+            <li>
+              <a href="case-notes.html" class="waves-effect">
+                <i class="bx bx-briefcase-alt"></i>
+                <span>INDIVIDUAL CASE PAGE</span>
+              </a>
+            </li>
+            <li class="text-center copyright-text"><a href="#">COPYRIGHT © IMMIGRATION SPEED</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <!-- Left Sidebar End -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+      <div class="page-content">
+        <div class="container-fluid">
+
+          <!-- start page title -->
+          <div class="row">
+            <div class="col-12">
+              <div class="page-title-box d-flex align-items-center justify-content-between">
+                <h4 class="mb-0 font-size-18">Audits / Missing Client Info</h4>
+
+                <div class="page-title-right">
+                  <a href="audit-list.html" class="btn btn-secondary mr-2"><i
+                      class="bx bx-arrow-back font-size-16 align-middle mr-2"></i>Back</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- end page title -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                      <div class="form-group">
+                        <label class="control-label">Attorney</label>
+                        <select class="form-control select2">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                          <option>Option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <div class="form-group">
+                        <label class="control-label">Paralegal</label>
+                        <select class="form-control select2">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                          <option>Option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <div class="form-group">
+                        <label class="control-label">Case Type</label>
+                        <select class="form-control select2">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          <option>Option 4</option>
+                          <option>Option 5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <div class="form-group mb-0 mt-4">
+                        <button class="btn btn-primary">Search</button>
+                        <button class="btn btn-success"><i class="bx bx-printer
+                          font-size-16 align-middle mr-2"></i>Print</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                      <hr>
+                    </div>
+                  </div>
+
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered table-allcase table-datatable">
+                      <thead class="thead-light">
+                        <tr>
+                          <th>Case #</th>
+                          <th>Status</th>
+                          <th class="width100">Branch Name</th>
+                          <th class="width150">Case Type</th>
+                          <th>Created Date</th>
+                          <th>Modified Date</th>
+                          <th>Attorney Name</th>
+                          <th>Paralegal Name</th>
+                          <th>Participants</th>
+                          <th>Priority</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>#2943443</td>
+                          <td>
+                            <div class="myls-status ms-success">Active</div>
+                          </td>
+                          <td>US</td>
+                          <td>EB-1 Visa</td>
+                          <td>04/17/2020</td>
+                          <td>04/17/2020</td>
+                          <td>John Doe</td>
+                          <td>John Doe</td>
+                          <td>patel Pranjana, Rathod Parul</td>
+                          <td>
+                            <div class="myls-status ms-danger">Low</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>#2943443</td>
+                          <td>
+                            <div class="myls-status ms-danger">Deactive</div>
+                          </td>
+                          <td>US</td>
+                          <td>EB-1 Visa</td>
+                          <td>04/17/2020</td>
+                          <td>04/17/2020</td>
+                          <td>John Doe</td>
+                          <td>John Doe</td>
+                          <td>patel Pranjana, Rathod Parul</td>
+                          <td>
+                            <div class="myls-status ms-success">High</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>#2943443</td>
+                          <td>
+                            <div class="myls-status ms-success">Active</div>
+                          </td>
+                          <td>US</td>
+                          <td>EB-1 Visa</td>
+                          <td>04/17/2020</td>
+                          <td>04/17/2020</td>
+                          <td>John Doe</td>
+                          <td>John Doe</td>
+                          <td>patel Pranjana, Rathod Parul</td>
+                          <td>
+                            <div class="myls-status ms-danger">Low</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>#2943443</td>
+                          <td>
+                            <div class="myls-status ms-danger">Deactive</div>
+                          </td>
+                          <td>US</td>
+                          <td>EB-1 Visa</td>
+                          <td>04/17/2020</td>
+                          <td>04/17/2020</td>
+                          <td>John Doe</td>
+                          <td>John Doe</td>
+                          <td>patel Pranjana, Rathod Parul</td>
+                          <td>
+                            <div class="myls-status ms-success">High</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- container-fluid -->
+      </div>
+      <!-- End Page-content -->
+
+    </div>
+    <!-- end main content-->
+  </div>
+
+
+  <div class="modal fade myls-modal" id="timerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Edit Time Entry</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/images/close.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group row">
+                <label class="control-label col-md-12">Duration <i class="fa fa-question-circle-o ml-2"
+                    aria-hidden="true"></i></label>
+                <div class="col-md-8 col-sm-12">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <button class="btn btn-primary">01:30:00</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <label class="control-label">Matter</label>
+                <select class="form-control">
+                  <option>Find a matter</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <label class="control-label">Activity Category</label>
+                <select class="form-control">
+                  <option>Find a category</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="form-group">
+                <label class="control-label">Date</label>
+                <input type="date" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="control-label">Description</label>
+                    <textarea class="form-control" placeholder="Write description..."></textarea>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <label class="control-label">Firm User</label>
+                    <select class="form-control">
+                      <option>Select User</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Rate</label>
+                    <input type="number" class="form-control">
+
+                  </div>
+                  <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck3" checked>
+                      <label class="custom-control-label control-label" for="customCheck3">Non-billable <i
+                          class="fa fa-question-circle-o ml-2" aria-hidden="true"></i></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-start">
+          <button type="button" class="btn btn-primary">Save Entry</button>
+          <button type="button" class="btn btn-light">Save & Create Another</button>
+          <button type="button" class="btn btn-light">Save & Duplicate</button>
+          <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!-- Bootstrap Datatable JS -->
+  <script src="assets/js/jquery.dataTables.min.js"></script>
+  <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+  <!-- select2 js -->
+  <script src="assets/select2/js/select2.full.min.js"></script>
+  <!-- Lightbox galary JS -->
+  <script src="assets/js/picturefill.min.js"></script>
+  <script src="assets/js/lightgallery.min.js"></script>
+  <script src="assets/js/lg-video.min.js"></script>
+  <script src="assets/js/jquery.mousewheel.min.js"></script>
+  <!-- init js -->
+  <script src="assets/js/metisMenu.min.js"></script>
+  <script src="assets/js/simplebar.min.js"></script>
+  <script src="assets/js/waves.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/custom.js"></script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function () {
+      $('.table-datatable').DataTable();
+      $('.select2').select2();
+      $('.select2bs4').select2({
+        theme: 'bootstrap4'
+      });
+    });
+  </script>
+</body>
+
+</html>
+
+
+<script>
+  function timerCall() {
+    var isstart = $('#isstart').val();
+
+    if (isstart == 1) {
+      //fa fa-play
+      //open modal
+      $('#playid').removeClass('fa fa-pause');
+      $('#playid').addClass('fa fa-play');
+      clearTimeout(t);
+      isstart = 0;
+      $('#timerModal').modal('show');
+    } else {
+      //fa fa-pause
+      //strat timer
+
+      $('#playid').removeClass('fa fa-play');
+      $('#playid').addClass('fa fa-pause');
+      timer();
+
+      isstart = 1;
+    }
+    $('#isstart').val(isstart);
+  }
+
+  var h1 = document.getElementsByTagName('h6')[0],
+    seconds = 0, minutes = 0, hours = 0,
+    t;
+
+  function add() {
+    seconds++;
+    if (seconds >= 60) {
+      seconds = 0;
+      minutes++;
+      if (minutes >= 60) {
+        minutes = 0;
+        hours++;
+      }
+    }
+
+    h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+    timer();
+  }
+
+  function timer() {
+    t = setTimeout(add, 1000);
+  }
+// timer();
+
+
+  /* Start button */
+// start.onclick = timer;
+
+
+
+</script>
